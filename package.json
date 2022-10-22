@@ -26,8 +26,9 @@
     }
   },
   "lint-staged": {
-    "src/**/*.{js,jsx}": [
-      "eslint \"src/**/*.{js,jsx}\""
+    "**/*.{js,jsx}": [
+      "eslint \"src/**/*.{js,jsx}\"",
+      "prettier --write \"src/**/*.{js,jsx}\""
     ]
   },
   "browserslist": {
